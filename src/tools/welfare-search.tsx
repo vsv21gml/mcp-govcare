@@ -408,6 +408,7 @@ export default defineTool(
       const [devView, setDevView] = useState<typeof mockOutput | null>(null);
       const [devLoading, setDevLoading] = useState(false);
       const [loadingPercent, setLoadingPercent] = useState(10);
+      const [expandedId, setExpandedId] = useState<string | null>(null);
 
       const hasResult = !!toolOutput?.items;
 
@@ -478,10 +479,17 @@ export default defineTool(
                     paddingBottom: "12px",
                   }}
                 >
-                  {view?.items?.map((item) => (
+                  {view?.items?.map((item) => {
+                    const isExpanded = expandedId === item.servId;
+                    return (
                     <Card
                       key={`card-${item.servId}`}
-                      style={{ width: 280, flex: "0 0 auto" }}
+                      style={{
+                        width: isExpanded ? "fit-content" : 280,
+                        maxWidth: "80vw",
+                        minWidth: 280,
+                        flex: "0 0 auto",
+                      }}
                       title={item.servNm || item.servId}
                       extra={
                         <Tag
@@ -514,6 +522,12 @@ export default defineTool(
                         )}
                         <Collapse
                           size="small"
+                          onChange={(keys) => {
+                            const hasOpen = Array.isArray(keys)
+                              ? keys.length > 0
+                              : !!keys;
+                            setExpandedId(hasOpen ? item.servId : null);
+                          }}
                           items={[
                             {
                               key: "details",
@@ -563,7 +577,8 @@ export default defineTool(
                         />
                       </Space>
                     </Card>
-                  ))}
+                    );
+                  })}
                 </div>
               </>
             )}
@@ -587,4 +602,3 @@ export default defineTool(
     },
   },
 );
-
