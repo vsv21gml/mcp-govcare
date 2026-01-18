@@ -30,13 +30,13 @@ if (typeof window !== "undefined") {
 const sourceEnum = z.enum(["national", "local"]);
 
 const inputSchema = {
-  age: z.number().int().min(0).optional(),
+  age: z.number().int().min(0),
   searchWrd: z
     .string()
     .min(1)
     .describe("검색어는 핵심 키워드만 입력 (예: 신혼부부, 청년, 주거)"),
-  ctpvNm: z.string().optional(),
-  sggNm: z.string().optional(),
+  ctpvNm: z.string(),
+  sggNm: z.string(),
   sources: z.array(sourceEnum).optional(),
   pageNo: z.number().int().min(1).optional(),
   numOfRows: z.number().int().min(1).max(50).optional(),
@@ -80,10 +80,10 @@ const outputSchema = {
 type Source = z.infer<typeof sourceEnum>;
 
 type ToolInput = {
-  age?: number;
+  age: number;
   searchWrd: string;
-  ctpvNm?: string;
-  sggNm?: string;
+  ctpvNm: string;
+  sggNm: string;
   sources?: Source[];
   pageNo?: number;
   numOfRows?: number;
@@ -475,19 +475,23 @@ export default defineTool(
                   style={{
                     display: "flex",
                     gap: "16px",
-                    overflowX: "auto",
+                    overflowX: expandedId ? "hidden" : "auto",
                     paddingBottom: "12px",
                   }}
                 >
-                  {view?.items?.map((item) => {
+                  {view?.items
+                    ?.filter((item) =>
+                      expandedId ? item.servId === expandedId : true,
+                    )
+                    .map((item) => {
                     const isExpanded = expandedId === item.servId;
                     return (
                     <Card
                       key={`card-${item.servId}`}
                       style={{
-                        width: isExpanded ? "fit-content" : 280,
-                        maxWidth: "80vw",
-                        minWidth: 280,
+                        width: isExpanded ? "100%" : 320,
+                        maxWidth: isExpanded ? "100%" : 320,
+                        minWidth: 320,
                         flex: "0 0 auto",
                       }}
                       title={item.servNm || item.servId}
@@ -499,10 +503,10 @@ export default defineTool(
                         </Tag>
                       }
                     >
-                      <Space direction="vertical" size="small">
+                      <Space direction="vertical" size="small" style={{ width: "100%" }}>
                         <Typography.Paragraph
                           ellipsis={{ rows: 2 }}
-                          style={{ margin: 0 }}
+                          style={{ margin: 0, minHeight: "44px" }}
                         >
                           {item.summary || "요약 없음"}
                         </Typography.Paragraph>
@@ -522,18 +526,24 @@ export default defineTool(
                         )}
                         <Collapse
                           size="small"
+                          activeKey={isExpanded ? ["details"] : []}
                           onChange={(keys) => {
                             const hasOpen = Array.isArray(keys)
                               ? keys.length > 0
                               : !!keys;
                             setExpandedId(hasOpen ? item.servId : null);
                           }}
+                          style={{ width: "100%" }}
                           items={[
                             {
                               key: "details",
                               label: "상세 보기",
                               children: (
-                                <Space direction="vertical" size="small">
+                                <Space
+                                  direction="vertical"
+                                  size="small"
+                                  style={{ width: "100%" }}
+                                >
                                   <Typography.Text>
                                     <strong>설명:</strong>{" "}
                                     {item.summary || "요약 없음"}
