@@ -1,0 +1,185 @@
+- url
+https://apis.data.go.kr/B554287/LocalGovernmentWelfareInformations/LcgvWelfarelist
+
+- query params
+serviceKey: token
+pageNo: page number
+numOfRows: page size
+ctpvNm: 시도명 (ex: 서울특별시)
+sggNm: 시군구명 (ex: 송파구)
+age: 대상자 나이
+searchWrd: 키워드검색
+
+- response
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wantedList>
+	<totalCount>247</totalCount>
+	<pageNo>1</pageNo>
+	<numOfRows>10</numOfRows>
+	<resultCode>0</resultCode>
+	<resultMessage>SUCCESS</resultMessage>
+	<servList>
+		<aplyMtdNm>방문, 인터넷</aplyMtdNm>
+		<bizChrDeptNm>경기도 수원시 여성가족국 여성정책과</bizChrDeptNm>
+		<ctpvNm>경기도</ctpvNm>
+		<inqNum>4438</inqNum>
+		<intrsThemaNmArray>서민금융</intrsThemaNmArray>
+		<lastModYmd>20260115</lastModYmd>
+		<lifeNmArray>영유아</lifeNmArray>
+		<servDgst>저출산 및 고령사회 기본법 및 입양 특례법에 따라  출산 · 입양 장려 분위기를 조성하기 위하여, 첫째자녀 이상 출산가정과 넷째자녀 이상 입양가정을 대상으로 자녀 출산 · 입양 지원금을 지급하여 시민의 삶의 질 향상에 기여함을 목적으로 함
+ ※ 「수원시 자녀 출산ㆍ입양 지원금 지급 조례」일부개정 (2025. 11. 13.)  / 2026. 1. 1.부터 지급대상자 확대 : 둘째자녀 이상  → 첫째자녀 이상    </servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001377&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00001377</servId>
+		<servNm>수원시 자녀 출산·입양 지원금</servNm>
+		<sggNm>수원시</sggNm>
+		<sprtCycNm>1회성</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+	</servList>
+	<servList>
+		<aplyMtdNm>방문, 인터넷</aplyMtdNm>
+		<bizChrDeptNm>울산광역시 울주군 복지교육국 여성가족과</bizChrDeptNm>
+		<ctpvNm>울산광역시</ctpvNm>
+		<inqNum>5549</inqNum>
+		<intrsThemaNmArray>서민금융, 임신·출산</intrsThemaNmArray>
+		<lastModYmd>20251216</lastModYmd>
+		<lifeNmArray>영유아, 임신 · 출산</lifeNmArray>
+		<servDgst>출산장려</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004079&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00004079</servId>
+		<servNm>울주군 출산장려금 지원</servNm>
+		<sggNm>울주군</sggNm>
+		<sprtCycNm>월</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+	</servList>
+	<servList>
+		<aplyMtdNm>인터넷, 방문</aplyMtdNm>
+		<bizChrDeptNm>울산광역시 울주군 복지교육국 여성가족과</bizChrDeptNm>
+		<ctpvNm>울산광역시</ctpvNm>
+		<inqNum>1887</inqNum>
+		<intrsThemaNmArray>임신·출산</intrsThemaNmArray>
+		<lastModYmd>20251216</lastModYmd>
+		<lifeNmArray>영유아, 임신 · 출산</lifeNmArray>
+		<servDgst>출산장려</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001576&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00001576</servId>
+		<servNm>출산축하용품 지원</servNm>
+		<sggNm>울주군</sggNm>
+		<sprtCycNm>1회성</sprtCycNm>
+		<srvPvsnNm>기타</srvPvsnNm>
+	</servList>
+	<servList>
+		<aplyMtdNm>인터넷, 모바일앱</aplyMtdNm>
+		<bizChrDeptNm>서울특별시 여성가족실 저출생담당관</bizChrDeptNm>
+		<ctpvNm>서울특별시</ctpvNm>
+		<inqNum>1721</inqNum>
+		<intrsThemaNmArray>서민금융, 입양·위탁, 임신·출산</intrsThemaNmArray>
+		<lastModYmd>20251022</lastModYmd>
+		<lifeNmArray>중장년, 임신 · 출산, 청년</lifeNmArray>
+		<servDgst>무주택 가구의 주거비 부담을 줄여 안정된 주거환경 속에서 자녀를 출산 할 수 있도록 지원하고자 함</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00006181&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00006181</servId>
+		<servNm>자녀출산 무주택가구 주거비 지원</servNm>
+		<sprtCycNm>년</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+	</servList>
+	<servList>
+		<aplyMtdNm>방문</aplyMtdNm>
+		<bizChrDeptNm>광주광역시 북구 복지교육국 여성보육과</bizChrDeptNm>
+		<ctpvNm>광주광역시</ctpvNm>
+		<inqNum>2152</inqNum>
+		<intrsThemaNmArray>서민금융, 임신·출산</intrsThemaNmArray>
+		<lastModYmd>20251011</lastModYmd>
+		<lifeNmArray>임신 · 출산, 영유아</lifeNmArray>
+		<servDgst>출산에 따른 경제적 부담을 경감하고 아이 낳아  키우기 좋은  환경조성</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004115&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00004115</servId>
+		<servNm>둘째아 이상 출산축하금</servNm>
+		<sggNm>북구</sggNm>
+		<sprtCycNm>1회성</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+		<trgterIndvdlNmArray>다자녀</trgterIndvdlNmArray>
+	</servList>
+	<servList>
+		<aplyMtdNm>방문</aplyMtdNm>
+		<bizChrDeptNm>광주광역시 북구 복지교육국 여성보육과</bizChrDeptNm>
+		<ctpvNm>광주광역시</ctpvNm>
+		<inqNum>2210</inqNum>
+		<intrsThemaNmArray>임신·출산</intrsThemaNmArray>
+		<lastModYmd>20251011</lastModYmd>
+		<lifeNmArray>영유아, 아동, 임신 · 출산</lifeNmArray>
+		<servDgst>저출생 극복을 위한 인식개선 및 결혼·출산·양육 친화 분위기 조성</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004269&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00004269</servId>
+		<servNm>출산가정 종량제봉투 지원</servNm>
+		<sggNm>북구</sggNm>
+		<sprtCycNm>1회성</sprtCycNm>
+		<srvPvsnNm>현물지급</srvPvsnNm>
+	</servList>
+	<servList>
+		<aplyMtdNm>방문</aplyMtdNm>
+		<bizChrDeptNm>인천광역시 중구 국제도시행정국 여성보육과</bizChrDeptNm>
+		<ctpvNm>인천광역시</ctpvNm>
+		<inqNum>5138</inqNum>
+		<intrsThemaNmArray>서민금융, 임신·출산, 입양·위탁</intrsThemaNmArray>
+		<lastModYmd>20250930</lastModYmd>
+		<lifeNmArray>영유아, 임신 · 출산</lifeNmArray>
+		<servDgst>출산율 저하로 인한 사회문제에 적극 대처하고 출산장려 분위기를 조성을 위해 다자녀(둘째아 이상)의 출산장려금 지원</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003947&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00003947</servId>
+		<servNm>출산장려금 지원</servNm>
+		<sggNm>중구</sggNm>
+		<sprtCycNm>1회성</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+		<trgterIndvdlNmArray>다자녀</trgterIndvdlNmArray>
+	</servList>
+	<servList>
+		<aplyMtdNm>방문</aplyMtdNm>
+		<bizChrDeptNm>부산광역시 사하구 주민복지국 노인장애인복지과</bizChrDeptNm>
+		<ctpvNm>부산광역시</ctpvNm>
+		<inqNum>1048</inqNum>
+		<intrsThemaNmArray>임신·출산, 서민금융</intrsThemaNmArray>
+		<lastModYmd>20250822</lastModYmd>
+		<lifeNmArray>노년, 중장년, 청년, 청소년, 임신 · 출산</lifeNmArray>
+		<servDgst>장애인가정에서 신생아 출산시 출산지원금 및 영아 양육지원금을 지급하여, 장애인가정의 생활안정과 출산 장려를 도모하기 위함.</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002747&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00002747</servId>
+		<servNm>장애인가정 출산 및 영아양육지원</servNm>
+		<sggNm>사하구</sggNm>
+		<sprtCycNm>월</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+		<trgterIndvdlNmArray>장애인</trgterIndvdlNmArray>
+	</servList>
+	<servList>
+		<aplyMtdNm>방문</aplyMtdNm>
+		<bizChrDeptNm>서울특별시 도봉구 복지가족국 어르신장애인과</bizChrDeptNm>
+		<ctpvNm>서울특별시</ctpvNm>
+		<inqNum>1242</inqNum>
+		<intrsThemaNmArray>서민금융, 임신·출산</intrsThemaNmArray>
+		<lastModYmd>20250819</lastModYmd>
+		<lifeNmArray>임신 · 출산, 청년, 중장년, 영유아</lifeNmArray>
+		<servDgst>비장애인에 비해 장애로 인한 경제적 어려움을 겪고 있는 장애인 가정에 출산비용을 지원함으로써 경제적 부담을 경감하고 출산  친화적 문화조성을 통한 삶의 질 개선에 기여하고자 함.</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002202&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00002202</servId>
+		<servNm>서울특별시 도봉구 장애인가정 출산지원금 지원</servNm>
+		<sggNm>도봉구</sggNm>
+		<sprtCycNm>1회성</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+		<trgterIndvdlNmArray>장애인</trgterIndvdlNmArray>
+	</servList>
+	<servList>
+		<aplyMtdNm>방문, 인터넷</aplyMtdNm>
+		<bizChrDeptNm>경상남도 진주시 복지여성국 여성가족과</bizChrDeptNm>
+		<ctpvNm>경상남도</ctpvNm>
+		<inqNum>7593</inqNum>
+		<intrsThemaNmArray>서민금융</intrsThemaNmArray>
+		<lastModYmd>20250815</lastModYmd>
+		<lifeNmArray>영유아</lifeNmArray>
+		<servDgst>출산가정의 경제적 부담을 완화하고, 산모• 신생아의 건강관리를 위하여 출산축하금을 지급함.</servDgst>
+		<servDtlLink>https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005380&amp;wlfareInfoReldBztpCd=02</servDtlLink>
+		<servId>WLF00005380</servId>
+		<servNm>진주시 출산축하금 지원</servNm>
+		<sggNm>진주시</sggNm>
+		<sprtCycNm>1회성</sprtCycNm>
+		<srvPvsnNm>현금지급</srvPvsnNm>
+	</servList>
+</wantedList>
