@@ -6,6 +6,8 @@ import { Hono } from "hono";
 import "dotenv/config";
 import searchWelfare, { getLastSummary } from "./tools/welfare-search.js";
 
+const mcpPath = process.env.MCP_PATH || '/govcare/mcp'
+
 const app = new Hono();
 
 const mcp = new McpServer({
@@ -41,5 +43,5 @@ app.all("/mcp", async (c) => {
 });
 
 serve(app, (info) => {
-  console.log(`MCP server listening on ${info.address}:${info.port}`);
+  console.log(`MCP server listening on ${info.address}:${info.port}${mcpPath});
 });
