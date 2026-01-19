@@ -43,5 +43,5 @@ app.all(mcpPath, async (c) => {
 });
 
 serve(app, (info) => {
-  console.log(`MCP server listening on ${info.address}:${info.port}${mcpPath});
+  console.log(`MCP server listening on ${info.address}:${info.port}${mcpPath}`);
 });
