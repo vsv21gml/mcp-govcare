@@ -36,7 +36,7 @@ mcp.registerResource(
 
 applyTools(mcp, [searchWelfare]);
 
-app.all("/mcp", async (c) => {
+app.all(mcpPath, async (c) => {
   const transport = new StreamableHTTPTransport();
   await mcp.connect(transport);
   return transport.handleRequest(c);
